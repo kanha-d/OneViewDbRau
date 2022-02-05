@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ResultActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            app:civ_border_overlay="true"
+            android:src="@drawable/student" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Student Details"
+            android:textColor="#222"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            app:contentPadding="15dp"
+            android:layout_marginHorizontal="5dp"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/headings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Institute Code &amp; Name	"
+                   />
+
+                <TextView
+                    android:id="@+id/inst"
+                    style="@style/data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="(065 ) B.S.A. COLLEGE OF ENGINEERING &amp; TECHNOLOGY,MATHUR	" />
+
+
+                <TextView
+                    style="@style/headings"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    />
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+
+
+
+                <TextView
+                    style="@style/headings"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Course Code &amp; Name	"
+                    />
+
+                <TextView
+                    android:id="@+id/course"
+                    style="@style/data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    style="@style/headings"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RollNo"
+                    />
+
+                <TextView
+                    android:id="@+id/roll"
+                    style="@style/data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+
+                <TextView
+                    style="@style/headings"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Branch  Code &amp; Name	"
+                    />
+
+                <TextView
+                    android:id="@+id/branch"
+                    style="@style/data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+
+                <TextView
+                    style="@style/headings"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="EnrollmentNo"
+                    />
+
+                <TextView
+                    android:id="@+id/enroll"
+                    style="@style/data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+
+                <TextView
+                    style="@style/headings"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Father's Name	"
+                    />
+
+                <TextView
+                    android:id="@+id/fatherName"
+                    style="@style/data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    style="@style/headings"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    />
+
+                <TextView
+                    android:id="@+id/gender"
+                    style="@style/data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+
+
+                <TextView
+                    style="@style/headings"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hindi Name"
+                    />
+
+                <TextView
+                    android:id="@+id/hindiName"
+                    style="@style/data"
+                    android:text="-"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Result Details"
+            android:textColor="#222"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            app:contentPadding="15dp"
+            android:layout_marginHorizontal="5dp"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/headings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Session 2020 - 2021 "
+                    />
+
+                <TextView
+                    style="@style/data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#F44336"
+                    android:text="CGPA - 78.7%  ( Pass ) " />
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#3F51B5"
+            android:layout_marginTop="26dp"
+            android:text="CONVERSION OF GRADES INTO PERCENTAGE\nMarks in percentage =(CGPA) X 10"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="40dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_print_24"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#FFC400"
+        android:layout_marginBottom="16dp"
+        />
+
+
+</RelativeLayout>
